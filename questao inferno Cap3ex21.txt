@@ -1,0 +1,51 @@
+programa {
+	funcao inicio() {
+        real horasT, salarioMin, horasExtraT, horasExtraTrabalhadas, quantiaHorasExtras, salarioBruto, salario, horasTrabalhadas
+        escreva ("Número de horas trabalhadas..: ")
+        leia (horasT)
+        escreva ("Valor do salário mínimo..: ")
+        leia (salarioMin)
+        escreva ("Horas extra trabalhadas..: ")
+        leia (horasExtraT)
+        
+        horasTrabalhadas = horasT/8
+        horasExtraTrabalhadas = salarioMin/4
+        
+        salarioBruto = horasT * horasTrabalhadas
+        quantiaHorasExtras = horasExtraT * horasExtraTrabalhadas
+        salario = salarioBruto + quantiaHorasExtras
+        
+        escreva ("Salário a receber..: " , salario)
+	}
+}
+
+
+C++
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float horasTrabalhadas, salarioMinimo, horasExtras, valorDaHoraTrabalhada, valorDaHoraExtra, valorSalarioBruto, valorHorasExtras, salarioReceber;
+    
+    cout << "Digite as horas trabalhadas..: ";
+    cin >> horasTrabalhadas;
+    cout << "Digite o salário mínimo..: ";
+    cin >> salarioMinimo;
+    cout << "Digite as horas extras..: ";
+    cin >> horasExtras;
+    
+    valorDaHoraTrabalhada = (salarioMinimo/8);
+    valorDaHoraExtra = (salarioMinimo/4);
+    
+    valorSalarioBruto = horasTrabalhadas * valorDaHoraTrabalhada;
+    valorHorasExtras = horasExtras * valorDaHoraExtra;
+    
+    salarioReceber = valorSalarioBruto + valorHorasExtras;
+
+    cout << "Salário a receber..: " << salarioReceber;
+
+    return 0;
+}

@@ -1,0 +1,28 @@
+programa {
+	funcao inicio() {
+real produto, desconto 
+escreva ("Valor do Produto..: ")
+leia (produto)
+desconto = produto - (produto * 0.10) 
+escreva ("Produto com Desconto..:" , desconto)
+
+	}
+}
+
+C++
+
+ #include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char *argv[])
+{
+    float produto, desconto;
+    cout << "Valor do Produto..: ";
+    cin >> produto;
+    desconto = produto - (produto * 0.10);
+    cout << "Produto com Desconto..:" << desconto;
+    
+    return 0;
+}

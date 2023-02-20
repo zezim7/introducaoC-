@@ -1,0 +1,40 @@
+programa {
+	funcao inicio() {
+		real salario, multa, conta1, conta2
+		escreva("Valor do salário..: ")
+		leia(salario)
+		escreva("Valor da primeira conta..: ")
+		leia(conta1)
+		escreva("Valor da segunda conta..: ")
+		leia(conta2)
+		
+		multa = (conta1*2/100) + (conta2*2/100)
+		
+		escreva("Valor do salário restante: ", (salario-multa))
+	}
+}
+
+
+C++
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float salario, multa, conta1, conta2;
+    cout << "Escreva o valor do salário..: ";
+    cin >> salario;
+    cout << "Escreva o valor da primeira conta..: ";
+    cin >> conta1;
+    cout << "Escreva o valor da segunda conta..: ";
+    cin >> conta2;
+    
+    multa = (conta1*2/100) + (conta2*2/100);
+    
+    cout << "Valor do salário restante: " << (salario-multa);
+
+    return 0;
+}

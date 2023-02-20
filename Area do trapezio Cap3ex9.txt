@@ -1,0 +1,37 @@
+programa {
+	funcao inicio() {
+        real area, baseMaior, baseMenor, altura
+        escreva ("Base Maior..: ")
+        leia (baseMaior)
+         escreva ("Base Menor..: ")
+        leia (baseMenor)
+        escreva ("Altura..: ")
+        leia (altura)
+        area = ((baseMaior + baseMenor) * altura)/2
+        escreva ("Área do Trapézio Decendente..: " , area)    
+	}
+}
+
+
+C++
+
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char *argv[])
+{
+    float baseMaior, baseMenor, altura, area;
+    cout << "Valor da base maior..: ";
+    cin >> baseMaior;
+    cout << "Valor da base menor..: ";
+    cin >> baseMenor;
+    cout << "Valor da altura..: ";
+    cin >> altura;
+    
+    area = ((baseMaior + baseMenor)*altura)/2;
+    cout << "Área do trapézio descendente..: " << area;
+    
+    return 0;
+}

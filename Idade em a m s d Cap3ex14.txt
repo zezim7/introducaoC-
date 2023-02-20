@@ -1,0 +1,47 @@
+programa {
+	funcao inicio() {
+        real anoNasc, anoAtual, idadeA, idadeM, idadeS, idadeD
+        escreva ("Escreva o ano de nascimento..: ")
+        leia (anoNasc)
+        escreva ("Escreva o ano atual..: ")
+        leia (anoAtual)
+        idadeA = anoAtual - anoNasc
+        idadeM = idadeA * 12
+        idadeS = idadeM * 4.3
+        idadeD = idadeS * 7
+        escreva ("\n\n" , "Idade em anos..: " , idadeA , "\n\n")
+	    escreva ("Idade em mêses..: " , idadeM , "\n\n")
+	    escreva ("Idade aproximada em semanas..: " , idadeS , "\n\n")
+	    escreva ("Idade aproximada em dias..: " , idadeD , "\n\n")
+	    
+	}
+}
+
+
+C++
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int anoNascimento, anoAtual;
+    float idadeAnos, idadeMeses, idadeSemanas, idadeDias;
+    cout << "Ano de nascimento..: ";
+    cin >> anoNascimento;
+    cout << "Ano atual..: ";
+    cin >> anoAtual;
+    
+    idadeAnos = anoAtual-anoNascimento;
+    idadeMeses = idadeAnos*12;
+    idadeSemanas = idadeMeses*4.3;
+    idadeDias = idadeSemanas*7;
+    
+    cout << "Idade em anos..: " << idadeAnos;
+    cout << "Idade em meses..: " << idadeMeses;
+    cout << "Idade em semanas..: " << idadeSemanas;
+    cout << "Idade em dias..: " << idadeDias;
+
+    return 0;
+}

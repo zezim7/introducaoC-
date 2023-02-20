@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  
+float salariominimo , salariofuncionario , resultado;
+  
+cout << "Digite seu salario..:";
+cin >> salariofuncionario;
+cout << "Digite o salario minimo..:";
+cin >> salariominimo;
+	    
+resultado = salariofuncionario / salariominimo; 
+	    
+cout << "A quantidade do seu salario minimo e..:",resultado;
+	   
+	    
+return 0;
+}
+
+
+programa {
+	funcao inicio() {
+	    // desclaração de variavel
+	    real salariominimo , salariofuncionario , resultado
+	    
+	    //Entrada de dados
+	    escreva ("Digite seu salario..:")
+	    leia (salariofuncionario)
+	    escreva ("Digite o salario minimo..:")
+	    leia (salariominimo)
+	   
+	    
+	    //processamneto
+	    
+	    resultado = salariofuncionario / salariominimo
+	    
+	    //saida de dados 
+	    
+	    escreva ("A quantidade do seu salario minimo e..:",resultado)
+	   
+	    
+	}
+}

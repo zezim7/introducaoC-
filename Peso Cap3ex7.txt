@@ -1,0 +1,32 @@
+programa {
+	funcao inicio() {
+        real peso, peso15, peso20 
+        escreva ("Peso da pessoa..: ")
+        leia (peso)
+        peso15 = peso + (peso * 0.15)
+        peso20 = peso - (peso * 0.20)
+        escreva ("Peso engordando 15%..: " , peso15)
+        escreva ("Peso emagrecendo 20%..: " , peso20)
+	}
+}
+
+
+C++
+
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char *argv[])
+{
+    float peso, peso15, peso20; 
+    cout << "Peso da pessoa..: ";
+    cin >> peso;
+    peso15 = peso + (peso * 0.15);
+    peso20 = peso - (peso * 0.20);
+    cout << "Peso engordando 15%..: " << peso15;
+    cout << "Peso emagrecendo 20%..: " << peso20;
+    
+    return 0;
+}
